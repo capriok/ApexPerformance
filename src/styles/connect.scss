@@ -1,18 +1,19 @@
 @import "./index.scss";
 
-.contact-wrap {
+.connect-wrap {
 	@include flex;
 	flex-direction: column;
 	width: 100vw;
 	max-width: 1000px;
 	padding: 50px;
 	background-color: rgb(17, 17, 17);
-	.contact-cont {
+
+	.connect-cont {
 		@include flex;
 		flex-direction: column;
 		width: 100%;
 		max-width: 600px;
-		.contact-title {
+		.connect-title {
 			font-size: 1.4rem;
 			text-align: center;
 			width: 100%;
@@ -27,11 +28,13 @@
 			width: 100%;
 			align-self: flex-start;
 		}
+
 		section {
 			@include flex;
 			justify-content: space-evenly;
 			width: 100%;
-			.contact-entity {
+
+			.connect-entity {
 				@include flex;
 				flex-direction: column;
 				p {
@@ -41,7 +44,8 @@
 					padding: 5px 0;
 					margin: 0;
 				}
-				.contact-buttons {
+
+				.connect-buttons {
 					font-size: 1.5rem;
 					@include flex;
 					width: 100%;
@@ -69,8 +73,8 @@
 	}
 	@include media("<=550") {
 		padding: 25px 20px;
-		.contact-cont {
-			.contact-title {
+		.connect-cont {
+			.connect-title {
 				font-size: 1.2rem;
 			}
 			label {
@@ -78,14 +82,14 @@
 			}
 			section {
 				flex-direction: column;
-				.contact-entity {
+				.connect-entity {
 					&:not(:last-child) {
 						margin-bottom: 20px;
 					}
 					p {
 						font-size: 0.85rem;
 					}
-					.contact-buttons {
+					.connect-buttons {
 						font-size: 1.2rem;
 					}
 				}

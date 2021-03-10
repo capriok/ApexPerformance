@@ -1,25 +1,25 @@
 import React from 'react'
 
-import '../styles/contact.scss'
+import '../styles/connect.scss'
 
 import { FiInstagram, FiMail } from 'react-icons/fi'
 
-const Contact = () => {
+const Connect = () => {
 
 	const Buttons = ({ insta, email }) => (
-		<div className="contact-buttons">
+		<div className="connect-buttons">
 			<a href={insta} target="_blank" rel="noopener noreferrer"><FiInstagram /></a>
 			<a href={email} target="_blank" rel="noopener noreferrer"><FiMail /></a>
 		</div>
 	)
 
 	return (
-		<div className="contact-wrap">
-			<div className="contact-cont">
-				<p className="contact-title">Connect</p>
+		<div className="connect-wrap">
+			<div className="connect-cont">
+				<p className="connect-title">Connect</p>
 				<label>Facility</label>
 				<section>
-					<div className="contact-entity">
+					<div className="connect-entity">
 						<p>Apex Performance</p>
 						<Buttons
 							insta="https://www.instagram.com/apexperformancefacility"
@@ -29,14 +29,14 @@ const Contact = () => {
 				</section>
 				<label>Personnel</label>
 				<section>
-					<div className="contact-entity">
+					<div className="connect-entity">
 						<p>Wes Budge</p>
 						<Buttons
 							insta="https://www.instagram.com/wes_budge"
 							email="https://mail.google.com/mail/u/0/?fs=1&to=wes@apexapf.com&su=Inquiry&tf=cm"
 						/>
 					</div>
-					<div className="contact-entity">
+					<div className="connect-entity">
 						<p>Justin Wakefield</p>
 						<Buttons
 							insta="https://www.instagram.com/justin_wakefield_"
@@ -49,4 +49,4 @@ const Contact = () => {
 	)
 }
 
-export default Contact
+export default Connect
