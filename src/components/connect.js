@@ -17,10 +17,10 @@ const Connect = () => {
 		<div className="connect-wrap">
 			<div className="connect-cont">
 				<p className="connect-title">Connect</p>
-				<label>Facility</label>
+				<label>Brand</label>
 				<section>
 					<div className="connect-entity">
-						<p>Apex Performance</p>
+						<p>Apex Performance Facility</p>
 						<Buttons
 							insta="https://www.instagram.com/apexperformancefacility"
 							email="https://mail.google.com/mail/u/0/?fs=1&to=wes@apexapf.com&su=Inquiry&cc=justin@apexapf.com&tf=cm"
