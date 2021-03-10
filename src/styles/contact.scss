@@ -1,0 +1,96 @@
+@import "./index.scss";
+
+.contact-wrap {
+	@include flex;
+	flex-direction: column;
+	width: 100vw;
+	max-width: 1000px;
+	padding: 50px;
+	background-color: rgb(17, 17, 17);
+	.contact-cont {
+		@include flex;
+		flex-direction: column;
+		width: 100%;
+		max-width: 600px;
+		.contact-title {
+			font-size: 1.6rem;
+			text-align: center;
+			width: 100%;
+			margin: 0;
+			padding-top: 0;
+			padding-bottom: 20px;
+			border-bottom: 2px solid white;
+		}
+		label {
+			margin: 20px 0;
+			margin-bottom: 10px;
+			width: 100%;
+			align-self: flex-start;
+		}
+		section {
+			@include flex;
+			justify-content: space-evenly;
+			width: 100%;
+			.contact-entity {
+				@include flex;
+				flex-direction: column;
+				p {
+					cursor: default;
+					@include flex;
+					width: 100%;
+					padding: 5px 0;
+					margin: 0;
+				}
+				.contact-buttons {
+					font-size: 1.5rem;
+					@include flex;
+					width: 100%;
+					padding: 5px;
+					a {
+						padding: 8px 30px 5px 30px;
+						border-radius: 5px;
+						border: 1px solid white;
+						transition: 0.2s;
+						&:hover {
+							background-color: rgb(25, 25, 25);
+						}
+					}
+					:first-child {
+						border-top-right-radius: 0px;
+						border-bottom-right-radius: 0px;
+					}
+					:last-child {
+						border-top-left-radius: 0px;
+						border-bottom-left-radius: 0px;
+					}
+				}
+			}
+		}
+	}
+	@include media("<=550") {
+		padding: 25px 20px;
+		.contact-cont {
+			.contact-title {
+				font-size: 1.4rem;
+			}
+			label {
+				font-size: 0.85rem;
+			}
+
+			section {
+				flex-direction: column;
+				.contact-entity {
+					&:not(:last-child) {
+						margin-bottom: 20px;
+					}
+					p {
+						font-size: 0.85rem;
+					}
+					.contact-buttons {
+						font-size: 1.2rem;
+					}
+				}
+			}
+		}
+	}
+}
