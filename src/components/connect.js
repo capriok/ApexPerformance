@@ -44,6 +44,8 @@ const Connect = () => {
 						/>
 					</div>
 				</section>
+				<br />
+				<br />
 			</div>
 		</div>
 	)

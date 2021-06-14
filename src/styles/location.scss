@@ -1,0 +1,46 @@
+@import "./index.scss";
+
+.location-wrap {
+	@include flex;
+	flex-direction: column;
+	width: 100vw;
+	max-width: 1000px;
+	min-width: 350px;
+	padding: 50px;
+
+	.location-address {
+		p {
+			font-size: 1rem;
+		}
+	}
+
+	.location-maps {
+		margin: 10px;
+		a {
+			min-width: 200px;
+			padding: 10px 30px 10px 30px;
+			border-radius: 5px;
+			border: 1px solid white;
+			transition: 0.2s;
+			&:hover {
+				background-color: rgb(25, 25, 25);
+			}
+		}
+	}
+
+	@include media("<=550") {
+		.location-address {
+			p {
+				font-size: 0.85rem;
+				@include flex;
+				flex-direction: column;
+			}
+		}
+		.location-maps {
+			a {
+				font-size: 0.85rem;
+				padding: 8px 25px 8px 25px;
+			}
+		}
+	}
+}

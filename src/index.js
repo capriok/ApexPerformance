@@ -8,6 +8,7 @@ import './styles/index.scss';
 import './styles/landing.scss'
 
 import LOGO_BLACK from './assets/apex-logo-black.jpg'
+import Location from './components/location';
 
 function Index() {
 	return (
@@ -17,6 +18,7 @@ function Index() {
 			</div>
 			<div className="landing-connect">
 				<Connect />
+				<Location />
 			</div>
 			<Footer />
 		</div>
